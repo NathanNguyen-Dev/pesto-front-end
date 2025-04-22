@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { MapPin, User, ChevronDown } from "lucide-react"
@@ -61,9 +62,11 @@ export default function Home() {
                   <div className="text-sm text-gray-500 mb-4 italic">
                     Try: "I'm looking for a technical co-founder with experience in AI and machine learning"
                   </div>
-                  <Button className="w-full bg-pesto-700 hover:bg-pesto-800 text-white py-6 text-lg">
-                    Find Matches
-                  </Button>
+                  <Link href="/find-matches/results" className="w-full block">
+                    <Button className="w-full bg-pesto-700 hover:bg-pesto-800 text-white py-6 text-lg">
+                      Find Matches
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
